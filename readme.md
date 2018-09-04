@@ -36,7 +36,7 @@ make all
 ```screen -ls
 screen -r go-egem
 ctrl+c to kill
-/root/go-egem/build/bin/egem --datadir ~/live-net/ --rpc
+/root/go-egem/build/bin/egem --datadir ~/live-net/ --rpc --maxpeers 100
 ```
 When you boot up go-egem there is a line that looks like this:
 
@@ -54,5 +54,5 @@ wget https://raw.githubusercontent.com/TeamEGEM/EGEM-Bootnodes/master/static-nod
 ```
 then run
 ```
-cd ~/go-egem && screen -dmS go-egem /root/go-egem/build/bin/egem --datadir ~/live-net/ --rpc
+cd ~/go-egem && screen -dmS go-egem /root/go-egem/build/bin/egem --datadir ~/live-net/ --rpc --maxpeers 100
 ```
