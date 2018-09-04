@@ -56,3 +56,7 @@ then run
 ```
 cd ~/go-egem && screen -dmS go-egem /root/go-egem/build/bin/egem --datadir ~/live-net/ --rpc --maxpeers 100
 ```
+to run a full Archive Node
+```
+cd ~/go-egem && screen -dmS go-egem /root/go-egem/build/bin/egem --datadir ~/live-net/ --rpc --maxpeers 100 --gcmode=archive --syncmode=full
+```
